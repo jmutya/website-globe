@@ -1,0 +1,4 @@
+.app{
+    background-image: url('./src/assets/background.png');
+    bacground-size: cover;
+}

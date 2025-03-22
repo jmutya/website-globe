@@ -1,35 +1,87 @@
-/* mainContent.css */
+/* General Layout */
 .main-container {
-    text-align: center;
-    padding: 50px 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .main-container h1 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .main-container p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .learn-more {
-    background-color: #f39c12;
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .learn-more:hover {
-    background-color: #e67e22;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+  display: flex;
+  max-width: 1200px;
+  width: 90%;
+  background: #0e90b8;
+  border-radius: 10px;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left Side - Image Section */
+.image-section {
+  position: relative;
+  width: 50%;
+}
+
+.banner-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.icon-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.globe-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Right Side - Text Section */
+.text-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.welcome-box {
+  background: white;
+  color: #007a5a;
+  padding: 8px 16px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #4fc08d;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #3ea072;
+}

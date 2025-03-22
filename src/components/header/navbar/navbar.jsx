@@ -1,19 +1,20 @@
 import React from "react";
 import "./navbar.css";
-
+import logo from "/src/assets/globe-logo-name.png";
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <ul className="nav-list">
-        <li className="home">Globe</li>
-        <div className="nav-right">
-          <li>Services</li>
-          <li>Contact</li>
-          <li>About</li>
-          <li>login</li>
-        </div>
-      </ul>
-    </nav>
+    <div className="navbar">
+  <div className="logo-container">
+    <img src={logo} alt="Logo" />
+  </div>
+  <ul className="nav-links">
+    <li><a href="#">Solutions</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+  <button className="signup-btn">Log in →</button>
+</div>
+
   );
 };
 

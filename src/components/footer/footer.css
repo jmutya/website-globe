@@ -5,7 +5,7 @@
     background-color:#0e90b8;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    backgroundattachment: fixed;
   }
   
   .footer-container {
